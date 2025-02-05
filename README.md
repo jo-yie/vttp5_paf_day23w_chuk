@@ -8,3 +8,6 @@ SQL Operations to Retrieve & Add with a Foreign Key Using Chuk's Files
 ### **GET /api/purchaseorder/`<SHOPPING_ID>`**
 
 ### **GET /api/purchaseorders**
+
+
+- Need to refactor code for SQL --> POJO processing
