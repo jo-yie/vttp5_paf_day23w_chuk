@@ -17,5 +17,34 @@ public class Queries {
         INSERT INTO line_item (name, quantity, unit_price, shopping_id)
             VALUES (?, ?, ?, ?)        
     """;
+
+    // SELECT * 
+	// FROM shopping_cart
+	// WHERE shopping_id = 1;
+    public static final String SQL_GET_SHOPPING_CART_BY_ID = 
+    """
+        SELECT * 
+            FROM shopping_cart
+            WHERE shopping_id = ?    
+    """;
     
+    public static final String SQL_GET_LINE_ITEM_BY_ID = 
+    """
+        SELECT * 
+            FROM line_item
+            WHERE shopping_id = ?
+    """;
+
+    public static final String SQL_GET_ALL_SHOPPING_CART = 
+    """
+        SELECT * 
+            FROM shopping_cart
+    """;
+
+    public static final String SQL_GET_ALL_LINE_ITEM = 
+    """
+        SELECT * 
+            FROM line_item 
+    """;
+
 }

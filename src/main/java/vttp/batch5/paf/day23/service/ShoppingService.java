@@ -1,5 +1,7 @@
 package vttp.batch5.paf.day23.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +17,18 @@ public class ShoppingService {
     public void insertShoppingCart(ShoppingCart shoppingCart) { 
 
         shoppingRepo.insertShoppingCart(shoppingCart);
+
+    }
+
+    public ShoppingCart getShoppingCart(int shopping_id) {
+
+        return shoppingRepo.getShoppingCart(shopping_id);
+
+    }
+
+    public List<ShoppingCart> getAllShoppingCarts() {
+
+        return shoppingRepo.getAllShoppingCarts();
 
     }
     
